@@ -6,5 +6,7 @@
 
 Created the GitLab project to start the work on the coursework. The most up-to-date edited code of the game will be stored in this repository for all to view. Added Julien Kunkel and Mohammed Al-Khafajiy to this repository as a developers so that they can view my repository as its being updated.
 
-#### 2:03 pm:
+#### 8:12 pm:
+
+Changed the title of the game to Mineplex Maze and edited this within the game's coding.
 
