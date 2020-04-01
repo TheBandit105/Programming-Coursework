@@ -12,8 +12,12 @@ Changed the title of the game to Mineplex Maze and edited this within the game's
 
 ### Day 2 - 31/03/20
 
-#### 23:35 pm:
+#### 11:35 pm:
 
 Found and used this website, https://www.parallelrealities.co.uk/tutorials/ppp/ppp5.php, to help make the additions and changes to the game as necessary. I managed to change the movement controls (keyboard keys) of the character from a,d,i to LEFT, RIGHT and UP. I assigned LEFT to move character left, RIGHT to move character right and UP to make the character jump when it's on the ground.
 
+### Day 3 - 01/04/20
 
+#### 10:33 pm: 
+
+I made a start on the LaTeX report of the project.
