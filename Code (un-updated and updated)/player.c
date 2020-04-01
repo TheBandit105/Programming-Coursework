@@ -43,21 +43,21 @@ void doPlayer(void)
 {
 	player->dx = 0;
 
-	if (app.keyboard[SDL_SCANCODE_A])
+	if (app.keyboard[SDL_SCANCODE_LEFT])
 	{
 		player->dx = -PLAYER_MOVE_SPEED;
 
 		player->texture = pete[1];
 	}
 
-	if (app.keyboard[SDL_SCANCODE_D])
+	if (app.keyboard[SDL_SCANCODE_RIGHT])
 	{
 		player->dx = PLAYER_MOVE_SPEED;
 
 		player->texture = pete[0];
 	}
 
-	if (app.keyboard[SDL_SCANCODE_I] && player->isOnGround)
+	if (app.keyboard[SDL_SCANCODE_UP] && player->isOnGround)
 	{
 		player->riding = NULL;
 
