@@ -20,4 +20,4 @@ Found and used this website, https://www.parallelrealities.co.uk/tutorials/ppp/p
 
 #### 10:33 pm: 
 
-I made a start on the LaTeX report of the project.
+I made a start on the LaTeX report of the project. Day 2 and 3's changes to the code have to uploaded to the project repository.
