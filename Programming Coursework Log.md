@@ -21,3 +21,9 @@ Found and used this website, https://www.parallelrealities.co.uk/tutorials/ppp/p
 #### 10:33 pm: 
 
 I made a start on the LaTeX report of the project. Day 2 and 3's changes to the code have to uploaded to the project repository.
+
+### Day 4 - 04/04/20
+
+#### 11:46 pm:
+
+I made changes to the graphics of the game to fit the title of the game I have decided upon. The tile blocks were changed to mineral ores you would find in a cave and I changed the items to collect in the game from pizzas to being diamonds.
