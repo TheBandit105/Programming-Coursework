@@ -27,3 +27,9 @@ I made a start on the LaTeX report of the project. Day 2 and 3's changes to the 
 #### 11:46 pm:
 
 I made changes to the graphics of the game to fit the title of the game I have decided upon. The tile blocks were changed to mineral ores you would find in a cave and I changed the items to collect in the game from pizzas to being diamonds.
+
+### Day 5 - 06/04/20
+
+#### 12:33 am:
+
+I made changes to the graphics of the characters of the game.
