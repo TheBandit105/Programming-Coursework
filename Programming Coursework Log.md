@@ -33,3 +33,9 @@ I made changes to the graphics of the game to fit the title of the game I have d
 #### 12:33 am:
 
 I made changes to the graphics of the characters of the game.
+
+### Day 6 - 07/04/20
+
+#### 12:13 am:
+
+Attempted to add the timer to the game, but have only managed to write the full screen text saying "TIME TAKEN".
