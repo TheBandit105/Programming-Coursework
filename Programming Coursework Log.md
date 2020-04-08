@@ -39,3 +39,10 @@ I made changes to the graphics of the characters of the game.
 #### 12:13 am:
 
 Attempted to add the timer to the game, but have only managed to write the full screen text saying "TIME TAKEN".
+
+### Day 7 - 09/04/20
+
+#### 12:00 am:
+
+Created new .c file named title.c, where I have added code for the title screen of the game. Currently, it does not work yet, but will get it working soon. Will work on the timer soon.
+
