@@ -46,3 +46,8 @@ Attempted to add the timer to the game, but have only managed to write the full 
 
 Created new .c file named title.c, where I have added code for the title screen of the game. Currently, it does not work yet, but will get it working soon. Will work on the timer soon.
 
+### Day 8 - 10/04/20
+
+#### 01:17 am:
+
+Sucessfully the title screen for the game. Now to work on timer.
