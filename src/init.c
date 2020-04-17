@@ -59,7 +59,7 @@ void initGame(void)
 
 	initSounds();
 
-	loadMusic("music/one_0.mp3");
+	loadMusic("");
 
 	playMusic(1);
 }
@@ -68,7 +68,7 @@ void cleanup(void)
 {
 	SDL_DestroyRenderer(app.renderer);
 
-	SDL_DestroyWindow(app.window);
+ 	SDL_DestroyWindow(app.window);
 
 	SDL_Quit();
 }

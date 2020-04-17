@@ -20,7 +20,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include "common.h"
 
-static SDL_Texture *pete[2];
+static SDL_Texture *sam[2];
 
 void initPlayer(void)
 {
@@ -31,10 +31,10 @@ void initPlayer(void)
 
 	player->health = 1;
 
-	pete[0] = loadTexture("gfx/pete01.png");
-	pete[1] = loadTexture("gfx/pete02.png");
+	sam[0] = loadTexture("gfx/sam01.png");
+	sam[1] = loadTexture("gfx/sam02.png");
 
-	player->texture = pete[0];
+	player->texture = sam[0];
 
 	SDL_QueryTexture(player->texture, NULL, NULL, &player->w, &player->h);
 }
@@ -47,14 +47,14 @@ void doPlayer(void)
 	{
 		player->dx = -PLAYER_MOVE_SPEED;
 
-		player->texture = pete[1];
+		player->texture = sam[1];
 	}
 
 	if (app.keyboard[SDL_SCANCODE_RIGHT])
 	{
 		player->dx = PLAYER_MOVE_SPEED;
 
-		player->texture = pete[0];
+		player->texture = sam[0];
 	}
 
 	if (app.keyboard[SDL_SCANCODE_UP] && player->isOnGround)

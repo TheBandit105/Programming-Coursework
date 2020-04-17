@@ -22,6 +22,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 static void tick(void);
 static void touch(Entity *other);
+static void draw(void);
 
 void initPizza(char *line)
 {
@@ -43,6 +44,8 @@ void initPizza(char *line)
 	e->touch = touch;
 
 	stage.pizzaTotal++;
+
+	
 }
 
 static void tick(void)

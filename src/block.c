@@ -36,4 +36,6 @@ void initBlock(char *line)
 	e->texture = loadTexture("gfx/block.png");
 	SDL_QueryTexture(e->texture, NULL, NULL, &e->w, &e->h);
 	e->flags = EF_SOLID+EF_WEIGHTLESS;
+
+	
 }

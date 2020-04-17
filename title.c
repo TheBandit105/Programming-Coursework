@@ -6,7 +6,6 @@ static void drawLogo(void);
 
 static int backgroundX;
 static SDL_Texture* background;
-static SDL_Texture* backgroundTexture;
 static SDL_Texture* mineplexTexture;
 static SDL_Texture* mazeTexture;
 static int reveal = 0;
@@ -21,7 +20,6 @@ void initTitle(void)
 
 	mineplexTexture = loadTexture("gfx/mineplex.png");
 	mazeTexture = loadTexture("gfx/maze.png");
-
 }
 
 static void logic(void)
@@ -45,6 +43,11 @@ static void logic(void)
 	{
 		exit(1);
 	}
+
+	if (app.keyboard[SDL_SCANCODE_K])
+	{
+		initCredits();
+	}
 }
 
 static void draw(void)
@@ -57,12 +60,13 @@ static void draw(void)
 
 	if (timeout % 40 < 20)
 	{
-		drawText(SCREEN_WIDTH / 2, 500, 0, 0, 0, TEXT_CENTER, "PRESS P TO PLAY!");
-		drawText(SCREEN_WIDTH / 2, 550, 0, 0, 0, TEXT_CENTER, "CONTROLS:");
-		drawText(SCREEN_WIDTH / 2, 580, 0, 0, 0, TEXT_CENTER, "LEFT - LEFT KEY | RIGHT - RIGHT KEY");
-		drawText(SCREEN_WIDTH / 2, 610, 0, 0, 0, TEXT_CENTER, "JUMP - UP KEY");
-		drawText(SCREEN_WIDTH / 2, 640, 0, 0, 0, TEXT_CENTER, "RESET - SPACE");
-		drawText(SCREEN_WIDTH / 2, 670, 0, 0, 0, TEXT_CENTER, "QUIT - ESCAPE");
+		drawText(SCREEN_WIDTH / 2, 300, 0, 0, 0, TEXT_CENTER, "PRESS P TO PLAY!");
+		drawText(SCREEN_WIDTH / 2, 350, 0, 0, 0, TEXT_CENTER, "CONTROLS:");
+		drawText(SCREEN_WIDTH / 2, 390, 0, 0, 0, TEXT_CENTER, "LEFT - LEFT KEY | RIGHT - RIGHT KEY");
+		drawText(SCREEN_WIDTH / 2, 430, 0, 0, 0, TEXT_CENTER, "JUMP - UP KEY");
+		drawText(SCREEN_WIDTH / 2, 475, 0, 0, 0, TEXT_CENTER, "RESET - SPACE");
+		drawText(SCREEN_WIDTH / 2, 520, 0, 0, 0, TEXT_CENTER, "CREDITS - K");
+		drawText(SCREEN_WIDTH / 2, 565, 0, 0, 0, TEXT_CENTER, "QUIT - ESCAPE");
 	}
 }
 
@@ -83,13 +87,11 @@ static void drawLogo(void)
 
 	r.h = MIN(reveal, r.h);
 
-	blitRect(mazeTexture, &r, (SCREEN_WIDTH / 2) - (r.w / 2), 250);
+	blitRect(mazeTexture, &r, (SCREEN_WIDTH / 2) - (r.w / 2), 160);
 }
 
 void initBackground(void)
 {
-	//background = loadTexture("gfx/mplx.png");
-
 	backgroundX = 0;
 }
 

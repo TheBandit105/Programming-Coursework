@@ -69,6 +69,9 @@
     <ClCompile Include="title.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="credits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\structs.h">

@@ -42,7 +42,7 @@ void initPlatform(char *line)
 
 	e->texture = loadTexture("gfx/platform.png");
 	SDL_QueryTexture(e->texture, NULL, NULL, &e->w, &e->h);
-	e->flags = EF_SOLID+EF_WEIGHTLESS+EF_PUSH;
+	e->flags = EF_SOLID+EF_WEIGHTLESS+EF_PUSH;	
 }
 
 static void tick(void)
