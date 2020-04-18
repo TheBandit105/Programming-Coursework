@@ -23,9 +23,6 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 static void logic(void);
 static void draw(void);
 static void drawHud(void);
-static SDL_Texture* background;
-static int backgroundX;
-static int reveal = 0;
 
 void initStage(void)
 {
@@ -73,7 +70,6 @@ static void drawHud(void)
 	r.w = SCREEN_WIDTH;
 	r.h = 35;
 
-
 	SDL_SetRenderDrawBlendMode(app.renderer, SDL_BLENDMODE_BLEND);
 	SDL_SetRenderDrawColor(app.renderer, 0, 0, 0, 196);
 	SDL_RenderFillRect(app.renderer, &r);
@@ -81,30 +77,3 @@ static void drawHud(void)
 
 	drawText(SCREEN_WIDTH - 5, 5, 255, 255, 255, TEXT_RIGHT, "DIAMONDS COLLECTED %d/%d", stage.pizzaFound, stage.pizzaTotal);
 }
-
-static void doBackground(void)
-{
-	if (--backgroundX < -SCREEN_WIDTH)
-	{
-		backgroundX = 0;
-	}
-}
-
-static void drawBackground(void)
-{
-	SDL_Rect dest;
-	int x;
-
-	for (x = backgroundX; x < SCREEN_WIDTH; x += SCREEN_WIDTH)
-	{
-		dest.x = x;
-		dest.y = 0;
-		dest.w = SCREEN_WIDTH;
-		dest.h = SCREEN_HEIGHT;
-
-		SDL_RenderCopy(app.renderer, background, NULL, &dest);
-	}
-}
-
-
-

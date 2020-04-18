@@ -58,13 +58,13 @@ void playSound(int id, int channel)
 
 static void loadSounds(void)
 {
-	sounds[SND_JUMP] = Mix_LoadWAV("sound/331381__qubodup__public-domain-jump-sound.ogg");
+	sounds[SND_JUMP] = Mix_LoadWAV("sound/369515__lefty-studios__jumping-sfx.wav");
 	if (sounds[SND_JUMP] == NULL) {
-		printf("Couldn't load sound/331381__qubodup__public-domain-jump-sound.ogg\n");
+		printf("Couldn't load sound/sound/369515__lefty-studios__jumping-sfx.wav\n");
 	}
 	else {
 		printf("Loaded sound successfully\n");
 	}
-	sounds[SND_PIZZA] = Mix_LoadWAV("sound/90134__pierrecartoons1979__found-item.ogg");
-	sounds[SND_PIZZA_DONE] = Mix_LoadWAV("sound/449069__ricniclas__fanfare.ogg");
+	sounds[SND_PIZZA] = Mix_LoadWAV("sound/171644__leszek-szary__scale-g6.wav");
+	sounds[SND_PIZZA_DONE] = Mix_LoadWAV("sound/122255__jivatma07__level-complete.wav");
 }

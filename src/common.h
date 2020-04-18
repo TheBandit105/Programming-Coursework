@@ -10,7 +10,6 @@ extern "C" {
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_mixer.h>
-#include <SDL2/SDL_ttf.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -57,7 +56,6 @@ void playMusic(int loop);
 void playSound(int id, int channel);
 void prepareScene(void);
 void presentScene(void);
-void initCredits(void);
 
 #include "common.h"
 

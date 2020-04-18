@@ -1,7 +1,10 @@
-﻿  title.c
-  LINK : 0 new modules and 1 (out of 56) modules have changed since prior linking
+﻿  init.c
+  stage.c
+  Generating Code...
+  LINK : 0 new modules and 2 (out of 56) modules have changed since prior linking
   Starting pass 2
-       title.obj
+       stage.obj
+       init.obj
        MSVCRTD.lib(loadcfg.obj)
   Finished pass 2
-  SpringProject.vcxproj -> C:\Users\shavi\source\Programming-Coursework\x64\Debug\SpringProject.exe
+  SpringProject.vcxproj -> C:\Users\shavi\Source\Programming-Coursework\cs1pr-portfolio\project-visual-studio\SpringProjectx\x64\Debug\SpringProject.exe

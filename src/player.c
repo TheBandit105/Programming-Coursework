@@ -48,6 +48,7 @@ void doPlayer(void)
 		player->dx = -PLAYER_MOVE_SPEED;
 
 		player->texture = sam[1];
+
 	}
 
 	if (app.keyboard[SDL_SCANCODE_RIGHT])
@@ -55,6 +56,7 @@ void doPlayer(void)
 		player->dx = PLAYER_MOVE_SPEED;
 
 		player->texture = sam[0];
+		
 	}
 
 	if (app.keyboard[SDL_SCANCODE_UP] && player->isOnGround)

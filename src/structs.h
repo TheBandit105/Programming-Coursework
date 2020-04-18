@@ -53,13 +53,10 @@ struct Entity {
 	float dy;
 	int health;
 	int isOnGround;
-	int side;
-	int radius;
 	float value;
 	SDL_Texture *texture;
 	void (*tick)(void);
 	void (*touch)(Entity *other);
-	void (*die)(void);
 	long flags;
 	Entity *riding;
 	Entity *next;

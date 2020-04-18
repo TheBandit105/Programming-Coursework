@@ -59,7 +59,7 @@ void initGame(void)
 
 	initSounds();
 
-	loadMusic("");
+	loadMusic("music/y2mate.com - Ahrix - Nova_X5mcY8ecs8I.wav");
 
 	playMusic(1);
 }
@@ -68,7 +68,7 @@ void cleanup(void)
 {
 	SDL_DestroyRenderer(app.renderer);
 
- 	SDL_DestroyWindow(app.window);
+	SDL_DestroyWindow(app.window);
 
 	SDL_Quit();
 }
