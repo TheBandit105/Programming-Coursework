@@ -48,6 +48,11 @@ static void logic(void)
 	{
 		initCredits();
 	}
+
+	if (app.keyboard[SDL_SCANCODE_O])
+	{
+		initObjective();
+	}
 }
 
 static void draw(void)
@@ -64,9 +69,10 @@ static void draw(void)
 		drawText(SCREEN_WIDTH / 2, 350, 0, 0, 0, TEXT_CENTER, "CONTROLS:");
 		drawText(SCREEN_WIDTH / 2, 390, 0, 0, 0, TEXT_CENTER, "LEFT - LEFT KEY | RIGHT - RIGHT KEY");
 		drawText(SCREEN_WIDTH / 2, 430, 0, 0, 0, TEXT_CENTER, "JUMP - UP KEY");
-		drawText(SCREEN_WIDTH / 2, 475, 0, 0, 0, TEXT_CENTER, "RESET - SPACE");
+		drawText(SCREEN_WIDTH / 2, 475, 0, 0, 0, TEXT_CENTER, "RESET FROM START (ALSO RESETS TIME) - SPACE");
 		drawText(SCREEN_WIDTH / 2, 520, 0, 0, 0, TEXT_CENTER, "CREDITS - K");
-		drawText(SCREEN_WIDTH / 2, 565, 0, 0, 0, TEXT_CENTER, "QUIT - ESCAPE");
+		drawText(SCREEN_WIDTH / 2, 565, 0, 0, 0, TEXT_CENTER, "OBJECTIVE (TASK OF THE GAME) - O");
+		drawText(SCREEN_WIDTH / 2, 610, 0, 0, 0, TEXT_CENTER, "QUIT - ESCAPE");
 	}
 }
 

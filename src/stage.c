@@ -76,5 +76,5 @@ static void drawHud(void)
 	SDL_SetRenderDrawBlendMode(app.renderer, SDL_BLENDMODE_NONE);
 
 	drawText(SCREEN_WIDTH - 5, 5, 255, 255, 255, TEXT_RIGHT, "DIAMONDS COLLECTED: %d/%d", stage.pizzaFound, stage.pizzaTotal);
-	drawText(SCREEN_WIDTH - 1275, 5, 255, 255, 255, TEXT_LEFT, "TIME ELAPSED: %2d SECS", SDL_GetTicks() / 1000);
+	drawText(SCREEN_WIDTH - 1275, 5, 255, 255, 255, TEXT_LEFT, "TIME ELAPSED: %2d SECS", ((SDL_GetTicks() / 1000) - 2));
 }

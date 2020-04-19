@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="credits.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="objective.c" />
     <ClCompile Include="src\block.c" />
     <ClCompile Include="src\camera.c" />
     <ClCompile Include="src\draw.c" />
