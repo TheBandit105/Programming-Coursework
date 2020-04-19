@@ -26,8 +26,6 @@ static void logic(void)
 {
 	doBackground();
 
-	drawMap();
-
 	if (reveal < SCREEN_HEIGHT)
 	{
 		reveal++;
@@ -58,8 +56,6 @@ static void logic(void)
 static void draw(void)
 {
 	drawBackground();
-
-	drawMap();
 
 	drawLogo();
 

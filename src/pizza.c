@@ -64,7 +64,7 @@ static void touch(Entity *other)
 		{
 			playSound(SND_PIZZA_DONE, CH_PIZZA);
 			SDL_RemoveTimer(1);
-			exit(1);
+			initEndscreen();
 		}
 		else
 		{

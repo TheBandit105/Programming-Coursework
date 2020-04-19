@@ -51,7 +51,7 @@ static void logic(void)
 
 static void draw(void)
 {
-	SDL_SetRenderDrawColor(app.renderer, 128, 192, 255, 255);
+	SDL_SetRenderDrawColor(app.renderer, 0, 0, 0, 255);
 	SDL_RenderFillRect(app.renderer, NULL);
 
 	drawMap();
