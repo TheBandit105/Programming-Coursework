@@ -1,6 +1,7 @@
 #include "common.h"
 
-static void logic(void);
+static void logic(void);				  /*credits.c works in the same way as title.c, but it shows the credits of the game for the user to see
+							                and it only	gives you the option to return to the title screen after you finished reading the credits.*/
 static void draw(void);
 static void drawLogo(void);
 
@@ -34,7 +35,7 @@ static void logic(void)
 		background = loadTexture("gfx/mplx.png");
 	}
 
-	if (app.keyboard[SDL_SCANCODE_R])
+	if (app.keyboard[SDL_SCANCODE_R])  /* Presing R allows for user to return to the title screen */
 	{
 		initTitle();
 	}
@@ -61,7 +62,7 @@ static void draw(void)
 		drawText(SCREEN_WIDTH / 2, 580, 0, 0, 0, TEXT_CENTER, "LAST UPDATED: 19 APRIL 2020 AT 12:21 PM");
 		drawText(SCREEN_WIDTH / 2, 650, 0, 0, 0, TEXT_CENTER, "PRESS R TO RETURN TO MENU");
 	}
-}
+}													/* Tells the credits to the user and gives them the option to return to the title screen by pressing R.*/
 
 static void drawLogo(void)
 {

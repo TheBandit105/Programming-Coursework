@@ -1,7 +1,31 @@
-﻿  endscreen.c
-  LINK : 0 new modules and 1 (out of 58) modules have changed since prior linking
+﻿  credits.c
+C:\Users\shavi\source\Programming-Coursework\credits.c(40,12): warning C4013: 'initTitle' undefined; assuming extern returning int
+  endscreen.c
+  stage.c
+  Generating Code...
+  LINK : 0 new modules and 3 (out of 58) modules have changed since prior linking
   Starting pass 2
+       title.obj
+       util.obj
+       textures.obj
+       text.obj
+       stage.obj
+       sound.obj
+       player.obj
+       platform.obj
+       pizza.obj
+       map.obj
+       io.obj
+       input.obj
+       init.obj
+       entities.obj
+       draw.obj
+       camera.obj
+       block.obj
+       objective.obj
+       main.obj
        endscreen.obj
+       credits.obj
        MSVCRTD.lib(loadcfg.obj)
   Finished pass 2
   SpringProject.vcxproj -> C:\Users\shavi\source\Programming-Coursework\x64\Debug\SpringProject.exe

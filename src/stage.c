@@ -51,12 +51,12 @@ static void logic(void)
 
 static void draw(void)
 {
-	SDL_SetRenderDrawColor(app.renderer, 0, 0, 0, 255);
+	SDL_SetRenderDrawColor(app.renderer, 0, 0, 0, 255);	 //Changed the colour of the background to black to match the theme of the game Mineplex.
 	SDL_RenderFillRect(app.renderer, NULL);
 
 	drawMap();
 
-	drawEntities();
+	drawEntities(); 
 
 	drawHud();
 }
@@ -75,6 +75,8 @@ static void drawHud(void)
 	SDL_RenderFillRect(app.renderer, &r);
 	SDL_SetRenderDrawBlendMode(app.renderer, SDL_BLENDMODE_NONE);
 
-	drawText(SCREEN_WIDTH - 5, 5, 255, 255, 255, TEXT_RIGHT, "DIAMONDS COLLECTED: %d/%d", stage.pizzaFound, stage.pizzaTotal);
-	drawText(SCREEN_WIDTH - 1275, 5, 255, 255, 255, TEXT_LEFT, "TIME ELAPSED: %2d SECS", ((SDL_GetTicks() / 1000) - 2));
+	drawText(SCREEN_WIDTH - 5, 5, 255, 255, 255, TEXT_RIGHT, "DIAMONDS COLLECTED: %d/%d", stage.pizzaFound, stage.pizzaTotal); // Changed the pizza counter to a diamond counter in respect of the theme and name of Mineplex.
+	drawText(SCREEN_WIDTH - 1275, 5, 255, 255, 255, TEXT_LEFT, "TIME ELAPSED: %2d SECS", ((SDL_GetTicks() / 1000) - 2)); /* Added timer to the game to see who can collect all the 11 diamonds within a short amount of time. 
+																														 This small feature allows for competitiveness in the game in terms of the time trials. */ 
+																												
 }

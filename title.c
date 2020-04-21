@@ -5,7 +5,7 @@ static void draw(void);
 static void drawLogo(void);
 
 static int backgroundX;
-static SDL_Texture* background;
+static SDL_Texture* background;												/*These SDL_Texture pointers allow for the textures to be generated onto the title screen in the first place.*/
 static SDL_Texture* mineplexTexture;
 static SDL_Texture* mazeTexture;
 static int reveal = 0;
@@ -16,7 +16,7 @@ void initTitle(void)
 	app.delegate.logic = logic;
 	app.delegate.draw = draw;
 
-	memset(app.keyboard, 0, sizeof(int) * MAX_KEYBOARD_KEYS);
+	memset(app.keyboard, 0, sizeof(int) * MAX_KEYBOARD_KEYS);				/* Tells the program what and how the title screen should be set up upon startup.*/
 
 	mineplexTexture = loadTexture("gfx/mineplex.png");
 	mazeTexture = loadTexture("gfx/maze.png");
@@ -35,7 +35,9 @@ static void logic(void)
 	if (app.keyboard[SDL_SCANCODE_P])
 	{
 		initStage();
-	}
+	}																		  /* Tells the program that if the user selects any one of these keys that the function is carried out.
+																			  When P is press, it initialises the stage and it takes the user to play the game. When user presses the escape key, the program terminates.
+																			  When K is pressed, the user is shown to the credits and when O is pressed, the user is shown to the objectives.*/
 
 	if (app.keyboard[SDL_SCANCODE_ESCAPE])
 	{
@@ -64,7 +66,7 @@ static void draw(void)
 		drawText(SCREEN_WIDTH / 2, 300, 0, 0, 0, TEXT_CENTER, "PRESS P TO PLAY!");
 		drawText(SCREEN_WIDTH / 2, 350, 0, 0, 0, TEXT_CENTER, "CONTROLS:");
 		drawText(SCREEN_WIDTH / 2, 390, 0, 0, 0, TEXT_CENTER, "LEFT - LEFT KEY | RIGHT - RIGHT KEY");
-		drawText(SCREEN_WIDTH / 2, 430, 0, 0, 0, TEXT_CENTER, "JUMP - UP KEY");
+		drawText(SCREEN_WIDTH / 2, 430, 0, 0, 0, TEXT_CENTER, "JUMP - UP KEY");											   /* drawText allows for text to be written onto the title screen*/
 		drawText(SCREEN_WIDTH / 2, 475, 0, 0, 0, TEXT_CENTER, "RESET FROM START (ALSO RESETS TIME) - SPACE");
 		drawText(SCREEN_WIDTH / 2, 520, 0, 0, 0, TEXT_CENTER, "CREDITS - K");
 		drawText(SCREEN_WIDTH / 2, 565, 0, 0, 0, TEXT_CENTER, "OBJECTIVE (TASK OF THE GAME) - O");
@@ -81,7 +83,7 @@ static void drawLogo(void)
 
 	SDL_QueryTexture(mineplexTexture, NULL, NULL, &r.w, &r.h);
 
-	r.h = MIN(reveal, r.h);
+	r.h = MIN(reveal, r.h);													   /*This allows for the logos to be animated as well as be drawn and displayed on the title screen.*/
 
 	blitRect(mineplexTexture, &r, (SCREEN_WIDTH / 2) - (r.w / 2), 100);
 
@@ -96,7 +98,7 @@ void initBackground(void)
 {
 	backgroundX = 0;
 }
-
+																					   /*This allows for the background to be animated as well as be drawn and displayed on the title screen.*/
 void doBackground(void)
 {
 	if (--backgroundX < -SCREEN_WIDTH)

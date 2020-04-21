@@ -1,7 +1,8 @@
 #include "common.h"
 
-static void logic(void);
-static void draw(void);
+static void logic(void);	  /*endscreen.c works in the same way as title.c, except it doesnt feature the "Mineplex Maze" logo 
+							  and it only	gives you the option to terminate the program after you finished playing the game.*/
+static void draw(void);			
 static void drawHud(void);
 static void drawLogo(void);
 
@@ -42,7 +43,7 @@ static void logic(void)
 
 	doCamera();
 
-	if (app.keyboard[SDL_SCANCODE_ESCAPE])
+	if (app.keyboard[SDL_SCANCODE_ESCAPE])  // Closes the window after you press the escape button.
 	{
 		exit(1);
 	}
@@ -56,7 +57,7 @@ static void draw(void)
 
 	drawHud();
 
-	drawText(SCREEN_WIDTH / 2, 475, 0, 0, 0, TEXT_CENTER, "WELL DONE, YOU COLLECTED ALL THE DIAMONDS! PRESS ESC TO QUIT.");
+	drawText(SCREEN_WIDTH / 2, 475, 0, 0, 0, TEXT_CENTER, "WELL DONE, YOU COLLECTED ALL THE DIAMONDS! PRESS ESC TO QUIT.");	 // Congratulates the user on completing the game and tells them to quit the game by pressing the escape button.
 }
 
 static void drawHud(void)
@@ -94,4 +95,6 @@ static void drawLogo(void)
 	r.h = MIN(reveal, r.h);
 
 	blitRect(mazeTexture, &r, (SCREEN_WIDTH / 2) - (r.w / 2), 160);
+
 }
+
